@@ -88,7 +88,8 @@ var saveMessages = (messages) => {
 var __main = () => {
     var messages = []
     for (var i = 1; i <= 100; i++) {
-        var url = `http://fanfou.com/twoheart/p.${i}`
+        var userid = twoheart
+        var url = `http://fanfou.com/${userid}/p.${i}`
         var messageInPage = messagesFromUrl(url)
         messages = [...messages, ...messageInPage]
     }
